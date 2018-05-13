@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+/*
+ * 
+ interface Composite{
+	function add(child);
+	function remove(child);
+	function getChild(index);
+ }
+ 
+ interface FormItem{
+	 function save();
+ }
+ */
+ var Interface = function(name,methods)
+ {
+	 if(arguments.length != 2){
+		 throw new Error("interface constructor called with " + arguments.length + " arguments,but expected exactly 2.");
+	 }
+	 this.name = name;
+	 this.methods = [];
+	 for(var i = 0, len = methods.length; i < len ; i++)
+	 {
+		 if(typeof menthods[i] !== "string")
+		 {
+			throw new Error("interface constructor expects method names to"
+					+"be passed in as a string.");	 
+		 }
+		 this.methods.push(methods[i]);
+	 }
+ };
+ 
+ Interface.ensureImplements = function(object)
+ {
+	 if(arguments.length < 2){
+		 throw new Error("function interface.ensureImplements called with " + arguments.length 
+				 + " arguments,but expected at least 2.");
+	 }
+	 
+	 for(var i = 1, len = methods.length; i < len ; i++ )
+	 {
+		var interfaces = arguments[i];
+		if(interfaces.constructor !== Interface)
+		{
+			throw new Error("function interface.ensureImplements expects argument"
+					+"two and above to be instances of interface.");
+		}
+		
+		for(var j = 0, methodslen = interfaces.methods.length; j < methodslen;j++)
+		{
+			var method = interfaces.methods[j];
+			if(!object[method] || typeof object[method] !== 'function')
+			{
+				throw new Error("function interface.ensureImplement:object"
+						+ "does not implement the " +interfaces.name 
+						+ "interface.menthod " + method +" was not found.");	
+			}
+		}
+	 }
+ };
+
+ var DynamicMap = new Interface('DynamicMap',['centerOnPoint','zoom','draw']);
+ 
+ function displayRoute(mapInstance)
+ {
+	 Interface.ensureImplements(mapInstance,DynamicMap);
+	 mapInstance.centerOnPoint(12,34);
+	 mapInstance.zoom(5);
+	 mapInstance.draw();
+ }
+</script>
+</body>
+</html>
