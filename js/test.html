@@ -1,8 +1,8 @@
 <BODY>
-<SELECT NAME="s1"><option>需要JavaScript才能正确显示</option></SELECT>
-<SELECT NAME="s2">--</SELECT>
-<SELECT NAME="s3">--</SELECT>
-<SELECT NAME="s4">--</SELECT>
+<SELECT NAME="s1"></SELECT>
+<SELECT NAME="s2"></SELECT>
+<SELECT NAME="s3"></SELECT>
+<SELECT NAME="s4"></SELECT>
 
 <SCRIPT LANGUAGE="JavaScript">
 //选择项: "名字", "值", 子选择
@@ -78,10 +78,9 @@ function wizz(level)
   	s.options[i] = new Option( a[i*3], a[i++*3+1] );
  var a = function(){return wizz(level+1)};
  s.onchange = a;
- //a();
-}
-
+ a();
  
+}
 
 wizz(0);
 
