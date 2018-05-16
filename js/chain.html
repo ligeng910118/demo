@@ -2,12 +2,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script type="text/javascript" src = "./Origin.js"></script>
+<script src="chain.js"></script>
 <title>Insert title here</title>
 </head>
 <body>
-<script>
-
+<script type="text/javascript">
+$(window).addEvent('load',function(){
+	$('test-1','test-2').show().setStyle('color','red')
+	.addEvent('click',function(e){
+		$(this).setStyle('color','green');
+	});
+});
 </script>
 </body>
 </html>
