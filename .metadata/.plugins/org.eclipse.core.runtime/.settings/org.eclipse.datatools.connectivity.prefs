@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+org.eclipse.datatools.enablement.mysql.4_1.driverTemplate=true
+org.eclipse.datatools.enablement.mysql.5_0.driverTemplate=true
+org.eclipse.datatools.enablement.mysql.5_1.driverTemplate=true
