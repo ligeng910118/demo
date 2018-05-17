@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+var wangYiMusicAction = function()
+{
+	this.vender = "wanhyiyun";
+	this.playingMusic = "see you again";
+};
+
+wangYiMusicAction.prototype = 
+{
+	last:function()
+	{
+		this.information = {currentMusic:"小幸运",status:"200|400",message:"上一曲"};
+		return this;
+	},
+	next:function()
+	{
+		this.information = {currentMusic:"小野子",status:"200|400",message:"下一曲"};
+		return this;
+	},
+	play:function()
+	{
+		this.information = {currentMusic:"see you again",status:"200|500",message:"播放"};
+		return this;
+	},
+	mute:function()
+	{
+		this.information = {currentMusic:"see you again",status:"200|500",message:"静音"};
+		return this;
+	},		
+};
+
+var qqMusicAction = function()
+{
+	this.vender = "qq";
+	this.playingMusic = "cry on my shoulder";	
+};
+
+qqMusicAction.prototype = 
+{
+		last:function()
+		{
+			this.information = {currentMusic:"天后",status:"200|400",message:"上一曲"};
+			return this;
+		},
+		next:function()
+		{
+			this.information = {currentMusic:"趁早",status:"200|400",message:"下一曲"};
+			return this;
+		},
+		play:function()
+		{
+			this.information = {currentMusic:"cry on my shoulder",status:"200|500",message:"播放"};
+			return this;
+		},
+		mute:function()
+		{
+			this.information = {currentMusic:"cry on my shoulder",status:"200|500",message:"静音"};
+			return this;
+		},				
+		
+};
+var MusicFactory = function(type)
+{
+	switch(type)
+	{
+		case "qq":
+			return new qqMusicAction();
+		case "wangyi":
+			return new wangYiMusicAction();
+	}
+};
+
+var music = new MusicFactory("wangyi");
+console.log(music.last().information.currentMusic)
+</script>
+</body>
+</html>
