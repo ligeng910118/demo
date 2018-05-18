@@ -27,7 +27,7 @@
 				this.container = document.getElementById( 'container' );
 
 				this.camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 1, 10000 );
-				this.camera.position.z = 500;
+				this.camera.position.z = 700;
 				this.camera.position.y = 500;
 				this.trackballControls = new THREE.TrackballControls(this.camera);
 
@@ -45,15 +45,15 @@
 
 				var quality = 32, step = 1024 / quality;
 
-				var geometry = new THREE.PlaneGeometry( 2000, 2000, quality - 1, quality - 1 );
-				geometry.rotateX( - Math.PI / 4 );
+				var geometry = new THREE.PlaneGeometry( 3000, 3000, quality - 1, quality - 1 );
+				geometry.rotateX( - Math.PI / 3 );
 				//console.log(geometry.vertices.length)
 				for ( var i = 0, l = geometry.vertices.length; i < l; i ++ ) {
 					var x = i % quality, y = Math.floor( i / quality );
 					geometry.vertices[ i ].y = data[ ( x * step ) + ( y * step ) * 1024 ] * 2 - 128;
-
+					
 				}
-
+				console.log(geometry)
 				this.mesh = new THREE.Mesh( geometry, material );
 				this.scene.add( this.mesh );
 
