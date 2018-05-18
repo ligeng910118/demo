@@ -1,0 +1,5 @@
+#DriverManager.Preferences
+#Thu May 17 19:56:29 CST 2018
+org.eclipse.datatools.enablement.mysql.5_0.driverTemplate=true
+org.eclipse.datatools.enablement.mysql.4_1.driverTemplate=true
+org.eclipse.datatools.enablement.mysql.5_1.driverTemplate=true
