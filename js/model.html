@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="./model.js"></script>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
-
+<script>
+var a = singleton;
+a.a = function(){console.log("a")}
+console.log(a);
+var b = singletonTwo;
+b.b = function(){ console.log("b")};
+console.log(b);
+</script>
 </body>
 </html>
