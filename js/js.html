@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+
+<div id="container" style="height: 400px"></div>
+<script>
+Highcharts.chart('container', {
+    title: {
+        text: 'Step line types, with null values in the series'
+    },
+    xAxis: {
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    },
+    yAxis: {
+        categories: ['none','open', 'close']
+    },
+    series: [{
+        data: [1,2,1,2,1,1,2,1,2],
+        step: 'left',
+        name: 'chart'
+    }]
+
+});
+</script>
+
+
+</body>
+</html>
