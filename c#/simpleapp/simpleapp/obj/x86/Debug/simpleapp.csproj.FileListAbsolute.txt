@@ -1,5 +1,0 @@
-/Users/macbook/Desktop/c#/simpleapp/simpleapp/bin/Debug/simpleapp.exe
-/Users/macbook/Desktop/c#/simpleapp/simpleapp/bin/Debug/simpleapp.pdb
-/Users/macbook/Desktop/c#/simpleapp/simpleapp/obj/x86/Debug/simpleapp.csproj.CoreCompileInputs.cache
-/Users/macbook/Desktop/c#/simpleapp/simpleapp/obj/x86/Debug/simpleapp.exe
-/Users/macbook/Desktop/c#/simpleapp/simpleapp/obj/x86/Debug/simpleapp.pdb
