@@ -24,6 +24,8 @@ var MyModules = (function Manager(){
 MyModules.define("bar",[],function(){
 	function hello(who)
 	{
+		0
+		
 		return "let me introduce:" + who;
 	}
 
