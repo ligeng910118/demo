@@ -5,6 +5,22 @@ class Employee
 	public string FirstName;
 	public string LastName;
 	public string Salary = "not enough";
+	private string Password;
+	private bool IsAuthenticated;
+
+	public bool Logon(string password)
+	{
+		if(Password == password)
+		{
+			IsAuthenticated = true;
+		}
+		return IsAuthenticated;
+	}
+
+	public bool GetIsAuthenticated()
+	{
+		return IsAuthenticated;
+	}
 
 	public string GetName()
 	{
