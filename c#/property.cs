@@ -5,10 +5,18 @@ class Program
 			Employee employee = new Employee();
 			employee.FirstName = "aa";
 			System.Console.WriteLine("{0}",employee.FirstName);
+
+			Employee employee2 = new Employee();
+			employee2.Title = "computer";
+			employee.Manage = employee2;
+			System.Console.WriteLine("{0}",employee.Manage.Title);
 	}
 
 	class Employee
 	{
+		public string Title { get;set; }
+		public Employee Manage { get;set; }
+
 		private string _FirstName;
 		public string FirstName
 		{
@@ -34,5 +42,6 @@ class Program
 				_LastName = value;
 			}
 		}
+
 	}
 }
