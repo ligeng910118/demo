@@ -2,27 +2,35 @@ var LoopImages = function(imgArr,container)
 {
 	this.imagesArray = imgArr;
 	this.container = container;
-	this.createImage = function(){}
-	this.changeImage = function(){}
+}
+LoopImages.prototype = {
+	createImage : function()
+	{
+		console.log("LoopImages createImage function");
+	},
+	changeImage:function()
+	{
+		console.log("LoopImages changeImage function");
+	}
 }
 
 var SlideLoopImg = function(imgArr,container)
 {
 	LoopImages.call(this,imgArr,container);
-	this.changeImage = function()
-	{
+}
+SlideLoopImg.prototype = new LoopImages();
+SlideLoopImg.prototype.changeImage= function(){
 		console.log("SlideLoopImg changeImage function");
-	}
 }
 
 var FadeLoopImg = function(imgArr,container,arrow)
 {
 	LoopImages.call(this,imgArr,container);
 	this.arrow = arrow;
-	this.changeImage = function()
-	{
+}
+FadeLoopImg.prototype = new LoopImages();
+FadeLoopImg.prototype.changeImage = function(){
 		console.log("FadeLoopImg changeImage function");
-	}
 }
 
 var fadeImg = new FadeLoopImg(
@@ -35,4 +43,6 @@ var fadeImg = new FadeLoopImg(
 	'left.jpg',
 	'right.jpg'
 	]);
+console.log(fadeImg);
+console.log(fadeImg.container);
 fadeImg.changeImage();
