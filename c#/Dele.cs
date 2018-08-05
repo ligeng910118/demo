@@ -31,6 +31,7 @@ class SimpleDelegateUse
 		jonsVoice = new StringProcessor(jon.Say);
 		background = new StringProcessor(Background.Note);
 		jonsVoice.Invoke("hello");
+		jonsVoice.Invoke("hi");
 		background("air plane!");
 	}
 }
