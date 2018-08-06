@@ -1,10 +1,12 @@
-初期：《C++ Primer》、《Effective C++》、《More Effective C++》、《Effective STL》、《C++标准程序库》、《Exceptional C++》、《C++编程规范》
+﻿初期：《C++ Primer》、《Effective C++》、《More Effective C++》、《Effective STL》、《C++标准程序库》、《Exceptional C++》、《C++编程规范》
 中期：《C++程序设计语言》、《C++语言的设计和演化》、《深度探索C++对象模型》、《C++沉思录》、《STL源码剖析》
 后期：《C++ Templates》、《C++设计新思维》
 
 http://bestcbooks.com/categories/c-plus-plus/
 
 每天
-javascript设计模式 105
+javascript设计模式 127
 深入理解c#   70
 
+
+https://segmentfault.com/a/1190000002440502
