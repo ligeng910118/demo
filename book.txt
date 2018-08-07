@@ -5,8 +5,9 @@
 http://bestcbooks.com/categories/c-plus-plus/
 
 每天
-javascript设计模式 127
-深入理解c#   70
+javascript设计模式 155
+c#本质论   135
 
 
 https://segmentfault.com/a/1190000002440502
+
