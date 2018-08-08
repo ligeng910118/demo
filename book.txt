@@ -14,5 +14,5 @@ https://segmentfault.com/a/1190000002440502
 8月 c#本质论 javascript设计模式
 9，10月 java编程思想   .net框架和spring框架
 11，12月  算法  java权威指南
-1月 c/c++ primer plus QT
+1月 c/c++ primer plus      unix网络编程        QT
 
