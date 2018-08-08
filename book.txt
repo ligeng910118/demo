@@ -8,7 +8,7 @@
 http://bestcbooks.com/categories/c-plus-plus/
 
 
-8月 c#本质论 javascript设计模式
+8月 c#本质论 （164）javascript设计模式 （185）
 9，10月 java编程思想   .net框架和spring框架
 11，12月  算法  java权威指南
 1月 c/c++ primer plus QT
