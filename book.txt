@@ -1,4 +1,4 @@
-﻿
+
 ﻿初期：《C++ Primer》、《Effective C++》、《More Effective C++》、《Effective STL》、《C++标准程序库》、《Exceptional C++》、《C++编程规范》
 
 初期：《C++ Primer》、《Effective C++》、《More Effective C++》、《Effective STL》、《C++标准程序库》、《Exceptional C++》、《C++编程规范》
@@ -8,12 +8,12 @@
 http://bestcbooks.com/categories/c-plus-plus/
 
 
-8月 c#本质论 （120 -- 164）javascript设计模式 （185）
-9，10月 java编程思想(109)   .net框架和spring框架
-11，12月  算法  java权威指南
+8月 javascript设计模式 （185）net框架（45）
+9，10月 java编程思想(109)   spring框架
+11，12月  算法  javascript权威指南
 1月 c/c++ primer plus QT
 
-
+休息：c#本质论 （238）
 https://segmentfault.com/a/1190000002440502
 
 
