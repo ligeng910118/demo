@@ -9,6 +9,7 @@ http://bestcbooks.com/categories/c-plus-plus/
 
 
 8月 javascript设计模式 （250）重构（45）
+8月 javascript设计模式 （253）重构
 9，10月 java编程思想(109)   spring框架
 11，12月  算法  javascript权威指南
 1月 c/c++ primer plus QT
