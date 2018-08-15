@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-addTest();
+//addTest();
 function addTest(){
 	function add (num) {
 	    var count = num;
@@ -37,7 +37,20 @@ function obj(){
 		Obj.func().func();
 		console.log(Obj.a);  
 }
-  
+
+function Person()
+{
+
+}
+
+Person.prototype.name = 'nike';
+Person.prototype.age = 29;
+Person.prototype.sayName = function()
+{
+	console.log(this.name);
+}
+var p = new Person();
+console.log(p);
 </script>
 </body>
 </html>
