@@ -19,5 +19,32 @@ Book.prototype = {
 	}
 }
 
-var book = new Book(10,'javascript',50);
-console.log(book);
+// var book = new Book(10,'javascript',50);
+// console.log(book);
+
+var SuperClass = function()
+{
+	this.superValue = true;
+}
+SuperClass.prototype = {
+	constructor : SuperClass,
+	getSuperValue : function()
+	{
+		return this.superValue;
+	}
+}
+
+var SubClass = function()
+{
+	this.subClass = false;
+}
+
+
+
+SubClass.prototype = new SuperClass();
+SubClass.prototype.constructor = SubClass;
+SubClass.prototype.getSubValue =function(){
+		return this.subClass;
+}
+var b = new SubClass();
+console.log(b);
