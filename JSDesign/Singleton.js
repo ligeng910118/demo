@@ -1,24 +1,26 @@
-var Singleton = function(name)
+//Singleton: 只允许实例化一个对象类，一个对象来规划一个命名空间，管理对象的属性和方法
+var Singleton = 
 {
-	this.name = name;
-	this.instance = null;
-};
-
-Singleton.prototype.getName = function()
-{
-	console.log(this.name);
-};
-
-Singleton.getInstance = function(name)
-{
-	if(!this.instance)
+	getId : function(id)
 	{
-		this.instance = new Singleton(name);
+		return document.getElementById(id);
+	},
+	setCss : function(id,key,value)
+	{
+		this.getId(id).style[key] = value;
+	},
+	setAttr : function(id,key,value)
+	{
+		this.getId(id)[key] = value;
+	},
+	setHtml : function(id,value)
+	{
+		this.getId(id).innerHTML = value;
+	},
+	on : function(id,type,fn)
+	{
+		this.getId(id)['on' + type] = fn;
 	}
-	return this.instance;
 };
 
-var a = Singleton.getInstance('shen');
-console.log(a);
-var b = Singleton.getInstance('sevax');
-console.log(b);
+console.log(Singleton.getId('container'))
